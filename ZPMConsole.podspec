@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZPMConsole"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ZPMConsole —— Show Console on simulator or device."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Show Console Log on simulator or device. Convenient debugging for you.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZPMConsole", "Console/**/*.{h,m}"
+  s.source_files  = "Console", "ZPMConsole/Console/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
