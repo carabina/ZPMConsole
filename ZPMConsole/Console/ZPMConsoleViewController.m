@@ -127,7 +127,7 @@
     }
     self.clickTimes++;
     
-    self.numberLabel.text = [NSString stringWithFormat:@"%zd",self.clickTimes];
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld",(long)self.clickTimes];
     
     [self.webView getHighlightAllOccurencesOfString:self.searchbar.text index:self.clickTimes];
 }
@@ -139,7 +139,7 @@
     }
     self.clickTimes--;
     
-    self.numberLabel.text = [NSString stringWithFormat:@"%zd",self.clickTimes];
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld",(long)self.clickTimes];
     
     [self.webView getHighlightAllOccurencesOfString:self.searchbar.text index:self.clickTimes];
 }
@@ -183,8 +183,8 @@
         self.nextItem.enabled = NO;
         self.previousItem.enabled = NO;
     }
-    self.navigationItem.title = [NSString stringWithFormat:@"TotalCount：%zd",self.keywordCount];
-    self.numberLabel.text = [NSString stringWithFormat:@"%zd",self.clickTimes];
+    self.navigationItem.title = [NSString stringWithFormat:@"TotalCount：%ld",(long)self.keywordCount];
+    self.numberLabel.text = [NSString stringWithFormat:@"%ld",(long)self.clickTimes];
     
     [searchBar setShowsCancelButton:NO animated:YES];
     [searchBar resignFirstResponder];
